@@ -7,11 +7,9 @@
             [status-im.chat.models :as models]
             [status-im.chat.models.message :as models.message]
             [status-im.chat.console :as console]
-            [status-im.chat.constants :as chat.constants]
             [status-im.commands.events.loading :as events.loading]
             [status-im.ui.components.list-selection :as list-selection]
             [status-im.ui.screens.navigation :as navigation]
-            [status-im.ui.screens.group.events :as group.events]
             [status-im.utils.handlers :as handlers]
             [status-im.utils.handlers-macro :as handlers-macro]
             [status-im.utils.contacts :as utils.contacts]
@@ -19,7 +17,6 @@
             [status-im.transport.message.core :as transport.message]
             [status-im.transport.message.v1.protocol :as protocol]
             [status-im.transport.message.v1.public-chat :as public-chat]
-            [status-im.transport.message.v1.group-chat :as group-chat]
             [status-im.data-store.chats :as chats-store]
             [status-im.data-store.messages :as messages-store]
             [status-im.data-store.contacts :as contacts-store]
@@ -27,8 +24,7 @@
             status-im.chat.events.requests
             status-im.chat.events.send-message
             status-im.chat.events.receive-message
-            status-im.chat.events.console
-            status-im.chat.events.webview-bridge))
+            status-im.chat.events.console))
 
 ;;;; Effects
 
